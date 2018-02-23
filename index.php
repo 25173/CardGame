@@ -58,7 +58,7 @@
             </div>
             <div id="scores">
                 <?php
-                $dbc = mysqli_connect('localhost','25173','12345','25173_db','3306') or die('error connecting');
+                $dbc = mysqli_connect('localhost','root','root','25173_db','3306') or die('error connecting');
 
                     $query = "SELECT * FROM highscore WHERE 1 ORDER BY score DESC LIMIT 10";
 
